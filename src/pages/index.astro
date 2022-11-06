@@ -6,6 +6,7 @@ import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
 import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
+import { Analytics } from '@vercel/analytics/react';
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
@@ -90,4 +91,5 @@ const description =
     </div>
     <Footer />
   </body>
+  <Analytics />
 </html>
